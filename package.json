@@ -9,12 +9,14 @@
   },
   "bin": "cli.js",
   "dependencies": {
+    "es6-promise": "^2.3.0",
     "meow": "^3.3.0"
   },
   "devDependencies": {
     "conventional-changelog": "^0.1.0-beta",
     "david": "*",
     "eclint": "*",
+    "env-test": "^1.0.0",
     "eslint": "^1.0.0-rc",
     "espower-loader": "*",
     "fixpack": "*",
@@ -45,7 +47,7 @@
     "fixpack": "fixpack",
     "git:tag": "git tag v${npm_package_version}",
     "lint": "npm run eclint && npm run eslint",
-    "test": "mocha --require ./enable-power-assert.js -- ./test.js",
+    "test": "globstar --ignore \"node_modules/**\" -- mocha --require ./enable-power-assert.js \"test/*test.js\"",
     "verify": "npm run lint && npm run test"
   }
 }

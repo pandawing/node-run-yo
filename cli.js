@@ -2,7 +2,7 @@
 /*eslint no-console:0*/
 'use strict';
 var meow = require('meow');
-var yoYo = require('./');
+var yo = require('./lib/yo');
 
 var cli = meow({
   help: [
@@ -21,4 +21,4 @@ var cli = meow({
   ]
 });
 
-console.log(yoYo(cli.input[0] || 'unicorns'));
+console.log(yo({}));
