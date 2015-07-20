@@ -28,7 +28,7 @@ it('should be fulfilled, relative path', function () {
   var expectedData = require(path.join(process.cwd(), './test/fixtures/target.json'));
   return shouldFulfilled(readJsonFile(params)).then(function (value) {
     var expected = {
-      path: 'test/fixtures/target.json',
+      path: path.normalize('test/fixtures/target.json'),
       data: expectedData
     };
     assert.deepEqual(value, expected);
