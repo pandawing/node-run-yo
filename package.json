@@ -36,7 +36,7 @@
     "cli-app"
   ],
   "license": "MIT",
-  "repository": "sanemat/yo-yo",
+  "repository": "pandawing/node-yo-yo",
   "scripts": {
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "david": "david update",
