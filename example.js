@@ -4,9 +4,11 @@ var Promise = require('es6-promise').Promise;
 
 var input;
 var cwd;
-readPackage({
+readJSONField({
   input: input,
-  cwd: cwd
+  cwd: cwd,
+  field: 'name',
+  file: 'package.json'
 }).then(function(value){
   //value = {
   // input, cwd, packageName
