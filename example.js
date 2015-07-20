@@ -8,7 +8,7 @@ readJSONField({
   input: input,
   cwd: cwd,
   field: 'name',
-  file: 'package.json'
+  path: './package.json'
 }).then(function(value){
   //value = {
   // input, cwd, packageName
