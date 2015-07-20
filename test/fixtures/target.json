@@ -1,34 +1,27 @@
 {
-  "name": "yo-yo",
+  "name": "example",
   "description": "My spectacular module",
   "version": "0.0.0",
   "author": {
     "name": "sanemat",
     "email": "o.gata.ken@gmail.com",
-    "url": "sane.jp"
+    "url": "example.com"
   },
   "bin": "cli.js",
   "dependencies": {
-    "es6-promise": "^2.3.0",
-    "make-error": "^1.0.2",
-    "meow": "^3.3.0",
-    "resolve-bin": "^0.3.0",
-    "yo": "^1.4.7"
+    "meow": "^3.3.0"
   },
   "devDependencies": {
     "conventional-changelog": "^0.1.0-beta",
-    "object-assign": "^3.0.0",
-    "david": "^6.1.6",
-    "eclint": "^0.2.6",
-    "env-test": "^1.0.0",
+    "david": "*",
+    "eclint": "*",
     "eslint": "^1.0.0-rc",
-    "espower-loader": "^0.11.0",
-    "fixpack": "^2.2.0",
-    "globstar": "^1.0.0",
-    "mocha": "^2.2.5",
-    "power-assert": "^0.11.0",
-    "promise-test-helper": "^0.2.1",
-    "touch": "^1.0.0"
+    "espower-loader": "*",
+    "fixpack": "*",
+    "globstar": "*",
+    "mocha": "*",
+    "power-assert": "*",
+    "touch": "*"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -43,7 +36,7 @@
     "cli-app"
   ],
   "license": "MIT",
-  "repository": "pandawing/node-yo-yo",
+  "repository": "sanemat/example",
   "scripts": {
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "david": "david update",
@@ -52,7 +45,7 @@
     "fixpack": "fixpack",
     "git:tag": "git tag v${npm_package_version}",
     "lint": "npm run eclint && npm run eslint",
-    "test": "globstar --ignore \"node_modules/**\" -- mocha --require ./enable-power-assert.js \"test/*test.js\"",
+    "test": "mocha --require ./enable-power-assert.js -- ./test.js",
     "verify": "npm run lint && npm run test"
   }
 }
