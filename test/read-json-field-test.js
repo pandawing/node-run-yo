@@ -12,15 +12,26 @@ var validParams = {
   path: 'test/fixtures/target.json'
 };
 
-it('should be fail, cwd is required', function () {
+it('should be rejected, cwd is required', function () {
   var params = objectAssign(validParams, { cwd: null });
   return shouldRejected(readJsonField(params)).catch(function (error) {
     assert(error instanceof AppError);
   });
 });
-it('should be fail, cwd is required', function () {
-  var params = objectAssign(validParams, { cwd: null });
+it('should be rejected, field is required', function () {
+  var params = objectAssign(validParams, { field: null });
   return shouldRejected(readJsonField(params)).catch(function (error) {
+    assert(error instanceof AppError);
+  });
+});
+it('should be rejected, path is required', function () {
+  var params = objectAssign(validParams, { path: null });
+  return shouldRejected(readJsonField(params)).catch(function (error) {
+    assert(error instanceof AppError);
+  });
+});
+it('should be rejected, opt is required', function () {
+  return shouldRejected(readJsonField()).catch(function (error) {
     assert(error instanceof AppError);
   });
 });
