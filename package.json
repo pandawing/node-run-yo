@@ -9,8 +9,8 @@
   },
   "bin": "cli.js",
   "dependencies": {
+    "common-errors": "^0.5.1",
     "es6-promise": "^2.3.0",
-    "make-error": "^1.0.2",
     "meow": "^3.3.0",
     "resolve-bin": "^0.3.0",
     "yo": "^1.4.7"

@@ -5,13 +5,12 @@ var Promise = require('es6-promise').Promise;
 var input;
 var cwd;
 readJSONField({
-  input: input,
   cwd: cwd,
   field: 'name',
   path: './package.json'
 }).then(function(value){
   //value = {
-  // input, cwd, packageName
+  // cwd, field {name: data}
   // };
   prepareTempArea();
 }).then(function(value){
