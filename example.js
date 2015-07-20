@@ -4,24 +4,22 @@ var Promise = require('es6-promise').Promise;
 
 var input;
 var cwd;
-var yoExecutePath;
 readPackage({
   input: input,
-  cwd: cwd,
-  yoExecutePath: yoExecutePath
+  cwd: cwd
 }).then(function(value){
   //value = {
-  // input, cwd, packageName, yoExecutePath
+  // input, cwd, packageName
   // };
   prepareTempArea();
 }).then(function(value){
   //value = {
-  // input, cwd, preparedPath, packageName, yoExecutePath
+  // input, cwd, preparedPath, packageName
   // };
   linkGenerator();
 }).then(function(value){
   //value = {
-  // input, cwd, preparedPath, yoLinkName(packageName), yoExecutePath
+  // input, cwd, preparedPath, yoLinkName(packageName)
   // };
   yo();
 }).then(function(value){
