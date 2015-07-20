@@ -1,6 +1,7 @@
 'use strict';
 var assert = require('power-assert');
 var shouldRejected = require('promise-test-helper').shouldRejected;
+var shouldFulfilled = require('promise-test-helper').shouldFulfilled;
 var readJsonField = require('../lib/read-json-field');
 var objectAssign = require('object-assign');
 var errors = require('common-errors');
@@ -39,5 +40,16 @@ it('should be rejected, module not found', function () {
   var params = objectAssign({}, validParams, { path: './test/fixtures/not-found.json' });
   return shouldRejected(readJsonField(params)).catch(function (error) {
     assert(error instanceof errors.io.FileNotFoundError);
+  });
+});
+it('should be fulfilled', function () {
+  var params = objectAssign({}, validParams);
+  return shouldFulfilled(readJsonField(params)).then(function (value) {
+    var expected = {
+      field: {
+        'description': 'My spectacular module'
+      }
+    };
+    assert.deepEqual(value, expected);
   });
 });
