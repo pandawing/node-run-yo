@@ -5,7 +5,6 @@ var Promise = require('es6-promise').Promise;
 var input;
 var cwd;
 readJSONField({
-  input: input,
   cwd: cwd,
   field: 'name',
   path: './package.json'

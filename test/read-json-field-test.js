@@ -18,3 +18,9 @@ it('should be fail, cwd is required', function () {
     assert(error instanceof AppError);
   });
 });
+it('should be fail, cwd is required', function () {
+  var params = objectAssign(validParams, { cwd: null });
+  return shouldRejected(readJsonField(params)).catch(function (error) {
+    assert(error instanceof AppError);
+  });
+});
