@@ -11,7 +11,7 @@ readJSONField({
   path: './package.json'
 }).then(function(value){
   //value = {
-  // input, cwd, packageName
+  // input, cwd, field {name: data}
   // };
   prepareTempArea();
 }).then(function(value){
