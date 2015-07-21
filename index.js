@@ -2,6 +2,7 @@
 
 var path = require('path');
 var readJsonFile = require('./lib/read-json-file');
+var getObjectField = require('./lib/get-object-field');
 
 module.exports = function (str, opts) {
   if (typeof str !== 'string') {
@@ -10,14 +11,20 @@ module.exports = function (str, opts) {
 
   opts = opts || {};
 
-  var targetJsonPath = path.join(process.cwd(), './package.json');
+  var cwd = process.cwd();
+  var targetJsonPath = path.join(cwd, './package.json');
   readJsonFile({
     path: targetJsonPath
   }).then(function (value) {
-    // var normalizedJsonPath = value['path'];
-    var data = value['data'];
-    var packageName = data['name'];
-    console.log('packageName: ' + packageName);// eslint-disable-line no-console
+    var packageData = value['data'];
+    var field = 'name';
+    return getObjectField({
+      data: packageData,
+      field: field
+    });
+  }).then(function (value) {
+    value;
+    //var packageName = value;
   }).catch(function (error) {
     console.error(error);// eslint-disable-line no-console
   });
