@@ -17,6 +17,7 @@
     "mkdirp": "^0.5.1",
     "resolve-bin": "^0.3.0",
     "tmp": "0.0.26",
+    "type-detect": "^1.0.0",
     "yo": "^1.4.7"
   },
   "devDependencies": {
