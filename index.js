@@ -16,7 +16,7 @@ module.exports = function (str, opts) {
   readJsonFile({
     path: targetJsonPath
   }).then(function (value) {
-    var packageData = value['data'];
+    var packageData = value;
     var field = 'name';
     return getObjectField({
       data: packageData,

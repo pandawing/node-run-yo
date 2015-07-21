@@ -27,21 +27,13 @@ it('should be fulfilled, relative path', function () {
   var params = { path: './test/fixtures/target.json' };
   var expectedData = require(path.join(process.cwd(), './test/fixtures/target.json'));
   return shouldFulfilled(readJsonFile(params)).then(function (value) {
-    var expected = {
-      path: path.normalize('test/fixtures/target.json'),
-      data: expectedData
-    };
-    assert.deepEqual(value, expected);
+    assert.deepEqual(value, expectedData);
   });
 });
 it('should be fulfilled, absolute path', function () {
   var params = { path: path.join(process.cwd(), './test/fixtures/target.json') };
   var expectedData = require(path.join(process.cwd(), './test/fixtures/target.json'));
   return shouldFulfilled(readJsonFile(params)).then(function (value) {
-    var expected = {
-      path: path.join(process.cwd(), './test/fixtures/target.json'),
-      data: expectedData
-    };
-    assert.deepEqual(value, expected);
+    assert.deepEqual(value, expectedData);
   });
 });
