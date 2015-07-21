@@ -11,6 +11,8 @@
   "dependencies": {
     "common-errors": "^0.5.1",
     "es6-promise": "^2.3.0",
+    "is-package": "^1.0.0",
+    "is-scoped-package": "^1.0.0",
     "meow": "^3.3.0",
     "resolve-bin": "^0.3.0",
     "yo": "^1.4.7"
