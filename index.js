@@ -31,7 +31,7 @@ module.exports = function (input, opts) {
     });
   }).then(function (value) {
     var appCompileDir = value;
-    console.log(appCompileDir);
+    console.log(appCompileDir);// eslint-disable-line no-console
   }).catch(function (error) {
     console.error(error);// eslint-disable-line no-console
   });
