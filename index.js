@@ -16,12 +16,14 @@ module.exports = function (str, opts) {
   readJsonFile({
     path: targetJsonPath
   }).then(function (value) {
-    // var normalizedJsonPath = value['path'];
-    getObjectField(value['data'], 'name', function(err, data) {
-      if (err) { throw err; }
-      var packageName = data;
+    var packageData = value['data'];
+    return getObjectField({
+      data: packageData,
+      field: 'name'
     });
-    console.log('packageName: ' + packageName);// eslint-disable-line no-console
+  }).then(function (value) {
+    value;
+    //var packageName = value;
   }).catch(function (error) {
     console.error(error);// eslint-disable-line no-console
   });
