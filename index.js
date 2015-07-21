@@ -4,6 +4,7 @@ var path = require('path');
 var readJsonFile = require('./lib/read-json-file');
 var getObjectField = require('./lib/get-object-field');
 var appCompileDir = require('./lib/app-compile-dir');
+var mkdirInTemp = require('./lib/mkdir-in-temp');
 
 module.exports = function (input, opts) {
   if (typeof input !== 'string') {
@@ -31,7 +32,12 @@ module.exports = function (input, opts) {
     });
   }).then(function (value) {
     var appCompileDir = value;
-    console.log(appCompileDir);// eslint-disable-line no-console
+    var appCompileParentDir = path.dirname(appCompileDir);
+    return mkdirInTemp({
+      dir: appCompileParentDir
+    });
+  }).then(function (value) {
+    console.log(value);// eslint-disable-line no-console
   }).catch(function (error) {
     console.error(error);// eslint-disable-line no-console
   });
