@@ -10,7 +10,8 @@ module.exports = function (str, opts) {
 
   opts = opts || {};
 
-  var targetJsonPath = path.join(process.cwd(), './package.json');
+  var cwd = process.cwd();
+  var targetJsonPath = path.join(cwd, './package.json');
   readJsonFile({
     path: targetJsonPath
   }).then(function (value) {
