@@ -37,6 +37,24 @@ describe('app compile dir', function () {
       assert(error instanceof errors.ArgumentError);
     });
   });
+  it('should be rejected, no parent for target dir', function () {
+    var params = objectAssign({}, validParams, { input: '..' });
+    return shouldRejected(appCompileDir(params)).catch(function (error) {
+      assert(error instanceof errors.ArgumentError);
+    });
+  });
+  it('should be rejected, no root for target dir', function () {
+    var params = objectAssign({}, validParams, { input: '/' });
+    return shouldRejected(appCompileDir(params)).catch(function (error) {
+      assert(error instanceof errors.ArgumentError);
+    });
+  });
+  it('should be rejected, no current for target dir', function () {
+    var params = objectAssign({}, validParams, { input: '.' });
+    return shouldRejected(appCompileDir(params)).catch(function (error) {
+      assert(error instanceof errors.ArgumentError);
+    });
+  });
   it('should be fulfilled, normal package', function () {
     var params = { input: 'you', packageName: 'generator-nm' };
     var expected = path.normalize('you/generator-nm');
@@ -47,6 +65,34 @@ describe('app compile dir', function () {
   it('should be fulfilled, scoped package', function () {
     var params = { input: 'you', packageName: '@sanemat/generator-nm' };
     var expected = path.normalize('you/@sanemat/generator-nm');
+    return shouldFulfilled(appCompileDir(params)).then(function (value) {
+      assert.equal(value, expected);
+    });
+  });
+  it('should be fulfilled, without trailing separator', function () {
+    var params = { input: 'you/', packageName: 'generator-nm' };
+    var expected = path.normalize('you/generator-nm');
+    return shouldFulfilled(appCompileDir(params)).then(function (value) {
+      assert.equal(value, expected);
+    });
+  });
+  it('should be fulfilled, with nested input directory', function () {
+    var params = { input: 'you/know', packageName: 'generator-nm' };
+    var expected = path.normalize('know/generator-nm');
+    return shouldFulfilled(appCompileDir(params)).then(function (value) {
+      assert.equal(value, expected);
+    });
+  });
+  it('should be fulfilled, included parent directory', function () {
+    var params = { input: '../../you/know', packageName: 'generator-nm' };
+    var expected = path.normalize('know/generator-nm');
+    return shouldFulfilled(appCompileDir(params)).then(function (value) {
+      assert.equal(value, expected);
+    });
+  });
+  it('should be fulfilled, with full path input directory', function () {
+    var params = { input: '/you/know', packageName: 'generator-nm' };
+    var expected = path.normalize('know/generator-nm');
     return shouldFulfilled(appCompileDir(params)).then(function (value) {
       assert.equal(value, expected);
     });
