@@ -3,9 +3,10 @@
 var path = require('path');
 var readJsonFile = require('./lib/read-json-file');
 var getObjectField = require('./lib/get-object-field');
+var appCompileDir = require('./lib/app-compile-dir');
 
-module.exports = function (str, opts) {
-  if (typeof str !== 'string') {
+module.exports = function (input, opts) {
+  if (typeof input !== 'string') {
     throw new TypeError('Expected a string');
   }
 
@@ -23,10 +24,16 @@ module.exports = function (str, opts) {
       field: field
     });
   }).then(function (value) {
-    value;
-    //var packageName = value;
+    var packageName = value;
+    return appCompileDir({
+      input: input,
+      packageName: packageName
+    });
+  }).then(function (value) {
+    var appCompileDir = value;
+    console.log(appCompileDir);
   }).catch(function (error) {
     console.error(error);// eslint-disable-line no-console
   });
-  return str + ' & ' + (opts.postfix || 'rainbows');
+  return input + ' & ' + (opts.postfix || 'rainbows');
 };
