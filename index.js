@@ -17,9 +17,10 @@ module.exports = function (str, opts) {
     path: targetJsonPath
   }).then(function (value) {
     var packageData = value['data'];
+    var field = 'name';
     return getObjectField({
       data: packageData,
-      field: 'name'
+      field: field
     });
   }).then(function (value) {
     value;
