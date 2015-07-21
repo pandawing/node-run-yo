@@ -37,6 +37,12 @@ describe('app compile dir', function () {
       assert(error instanceof errors.ArgumentError);
     });
   });
+  it('should be rejected, no input for target dir', function () {
+    var params = objectAssign({}, validParams, { input: '..' });
+    return shouldRejected(appCompileDir(params)).catch(function (error) {
+      assert(error instanceof errors.ArgumentError);
+    });
+  });
   it('should be fulfilled, normal package', function () {
     var params = { input: 'you', packageName: 'generator-nm' };
     var expected = path.normalize('you/generator-nm');
@@ -47,6 +53,13 @@ describe('app compile dir', function () {
   it('should be fulfilled, scoped package', function () {
     var params = { input: 'you', packageName: '@sanemat/generator-nm' };
     var expected = path.normalize('you/@sanemat/generator-nm');
+    return shouldFulfilled(appCompileDir(params)).then(function (value) {
+      assert.equal(value, expected);
+    });
+  });
+  it('should be fulfilled, without trailing separator', function () {
+    var params = { input: 'you/', packageName: 'generator-nm' };
+    var expected = path.normalize('you/generator-nm');
     return shouldFulfilled(appCompileDir(params)).then(function (value) {
       assert.equal(value, expected);
     });
