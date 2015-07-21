@@ -21,4 +21,4 @@ var cli = meow({
   ]
 });
 
-console.log(yoYo(cli.input[0] || 'example'));
+yoYo(cli.input[0] || 'example');
