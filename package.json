@@ -10,6 +10,7 @@
   "bin": "cli.js",
   "dependencies": {
     "common-errors": "^0.5.1",
+    "cross-spawn": "^2.0.0",
     "es6-promise": "^2.3.0",
     "is-package": "^1.0.0",
     "is-scoped-package": "^1.0.0",
