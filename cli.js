@@ -19,6 +19,14 @@ var cli = meow({
     'Options',
     '  --foo  Lorem ipsum. Default: false'
   ]
-});
+},
+  {
+    default: {
+      info: true,
+      verbose: false,
+      debug: false
+    }
+  }
+);
 
-yoYo(cli.input[0] || 'example');
+yoYo(cli.input[0] || 'example', cli.flags);
