@@ -43,8 +43,8 @@
     "node": ">=0.10.0"
   },
   "files": [
-    "index.js",
-    "cli.js"
+    "cli.js",
+    "lib"
   ],
   "keywords": [
     "",
