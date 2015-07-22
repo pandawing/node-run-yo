@@ -17,10 +17,12 @@
     "meow": "^3.3.0",
     "mkdirp": "^0.5.1",
     "object-assign": "^3.0.0",
+    "pretty-format": "^1.2.0",
     "remove-trailing-path-separator": "^1.0.1",
     "resolve-bin": "^0.3.0",
     "tmp": "0.0.26",
     "type-detect": "^1.0.0",
+    "winston": "^1.0.1",
     "yo": "^1.4.7"
   },
   "devDependencies": {

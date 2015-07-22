@@ -2,7 +2,7 @@
 /*eslint no-console:0*/
 'use strict';
 var meow = require('meow');
-var yoYo = require('./index');
+var yoYo = require('./lib/stable');
 
 var cli = meow({
   help: [
