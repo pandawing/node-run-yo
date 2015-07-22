@@ -1,4 +1,4 @@
-# yo-yo
+# run-yo
 
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
@@ -8,14 +8,14 @@
 ## Install
 
 ```
-$ npm install --save yo-yo
+$ npm install --save run-yo
 ```
 
 
 ## Usage
 
 ```js
-var yoYo = require('yo-yo');
+var yoYo = require('run-yo');
 
 yoYo('unicorns');
 //=> unicorns & rainbows
@@ -26,19 +26,19 @@ yoYo('unicorns');
 ## CLI
 
 ```
-$ npm install --global yo-yo
+$ npm install --global run-yo
 ```
 ```
-$ yo-yo --help
+$ run-yo --help
 
   Usage
-    yo-yo [input]
+    run-yo [input]
 
   Example
-    yo-yo
+    run-yo
     unicorns & rainbows
 
-    yo-yo ponies
+    run-yo ponies
     ponies & rainbows
 
   Options
@@ -78,11 +78,11 @@ Lorem ipsum.
 MIT © [sanemat](http://sane.jp)
 
 
-[travis-url]: https://travis-ci.org/pandawing/node-yo-yo
-[travis-image]: https://img.shields.io/travis/pandawing/node-yo-yo/master.svg?style=flat-square&label=travis
-[appveyor-url]: https://ci.appveyor.com/project/sanemat/node-yo-yo/branch/master
-[appveyor-image]: https://img.shields.io/appveyor/ci/sanemat/node-yo-yo/master.svg?style=flat-square&label=appveyor
-[npm-url]: https://npmjs.org/package/yo-yo
-[npm-image]: https://img.shields.io/npm/v/yo-yo.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/pandawing/node-yo-yo
-[daviddm-image]: https://img.shields.io/david/pandawing/node-yo-yo.svg?style=flat-square
+[travis-url]: https://travis-ci.org/pandawing/node-run-yo
+[travis-image]: https://img.shields.io/travis/pandawing/node-run-yo/master.svg?style=flat-square&label=travis
+[appveyor-url]: https://ci.appveyor.com/project/sanemat/node-run-yo/branch/master
+[appveyor-image]: https://img.shields.io/appveyor/ci/sanemat/node-run-yo/master.svg?style=flat-square&label=appveyor
+[npm-url]: https://npmjs.org/package/run-yo
+[npm-image]: https://img.shields.io/npm/v/run-yo.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/pandawing/node-run-yo
+[daviddm-image]: https://img.shields.io/david/pandawing/node-run-yo.svg?style=flat-square
