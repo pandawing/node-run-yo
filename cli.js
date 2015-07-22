@@ -7,13 +7,13 @@ var yoYo = require('./lib/stable');
 var cli = meow({
   help: [
     'Usage',
-    '  $ yo-yo [input]',
+    '  $ run-yo [input]',
     '',
     'Examples',
-    '  $ yo-yo',
+    '  $ run-yo',
     '  unicorns & rainbows',
     '',
-    '  $ yo-yo ponies',
+    '  $ run-yo ponies',
     '  ponies & rainbows',
     '',
     'Options',
