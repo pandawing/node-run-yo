@@ -19,4 +19,56 @@ describe('pick target', function () {
       assert(error instanceof errors.ArgumentError);
     });
   });
+  it('should not be allowed ".."', function () {
+    pickTarget('..', function (error) {
+      assert(error instanceof errors.ArgumentError);
+    });
+  });
+  it('should not be allowed "example/.."', function () {
+    pickTarget('example/..', function (error) {
+      assert(error instanceof errors.ArgumentError);
+    });
+  });
+  it('should be allowed example', function () {
+    pickTarget('example', function (error, data) {
+      if (error) { throw error; }
+      assert.equal(data, 'example');
+    });
+  });
+  it('should be allowed ./example', function () {
+    pickTarget('./example', function (error, data) {
+      if (error) { throw error; }
+      assert.equal(data, 'example');
+    });
+  });
+  it('should be allowed /example', function () {
+    pickTarget('/example', function (error, data) {
+      if (error) { throw error; }
+      assert.equal(data, 'example');
+    });
+  });
+  it('should be allowed ../example', function () {
+    pickTarget('../example', function (error, data) {
+      if (error) { throw error; }
+      assert.equal(data, 'example');
+    });
+  });
+  it('should be allowed example/', function () {
+    pickTarget('example/', function (error, data) {
+      if (error) { throw error; }
+      assert.equal(data, 'example');
+    });
+  });
+  it('should be allowed example/.', function () {
+    pickTarget('example/.', function (error, data) {
+      if (error) { throw error; }
+      assert.equal(data, 'example');
+    });
+  });
+  it('should be allowed foo/example', function () {
+    pickTarget('foo/example', function (error, data) {
+      if (error) { throw error; }
+      assert.equal(data, 'example');
+    });
+  });
 });
