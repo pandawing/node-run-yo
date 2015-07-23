@@ -1,6 +1,6 @@
 {
   "name": "run-yo",
-  "description": "Run a developing yo generator.",
+  "description": "Run the developing yeoman generator.",
   "version": "0.1.2",
   "author": {
     "name": "sanemat",
