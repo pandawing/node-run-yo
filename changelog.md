@@ -1,3 +1,16 @@
+<a name="0.2.0"></a>
+# 0.2.0 (2015-07-23)
+
+* Use symlink strategy (beta) becomes default!
+
+
+### Features
+
+* **beta:** change name 'unstable' to 'beta' ([247e092](https://github.com/pandawing/node-run-yo/commit/247e092))
+* **cli:** beta becomes default! ([a9210e5](https://github.com/pandawing/node-run-yo/commit/a9210e5))
+
+
+
 <a name="0.1.4"></a>
 ## 0.1.4 (2015-07-23)
 
