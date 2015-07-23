@@ -1,7 +1,7 @@
 {
   "name": "run-yo",
   "description": "Run the developing yeoman generator for OS X, Linux And Windows.",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "author": {
     "name": "sanemat",
     "email": "o.gata.ken@gmail.com",
