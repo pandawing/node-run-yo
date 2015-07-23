@@ -1,3 +1,15 @@
+<a name="0.1.3"></a>
+## 0.1.3 (2015-07-23)
+
+* Add --unstable CLI option
+
+### Features
+
+* **link:** unstable link/unlink version ([b725087](https://github.com/pandawing/node-run-yo/commit/b725087))
+* **prepare:** mkdirp link path's parent path ([3778d76](https://github.com/pandawing/node-run-yo/commit/3778d76))
+
+
+
 <a name="0.1.2"></a>
 ## 0.1.2 (2015-07-23)
 
