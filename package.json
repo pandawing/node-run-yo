@@ -20,6 +20,7 @@
     "object-assign": "^3.0.0",
     "pretty-format": "^1.2.0",
     "remove-trailing-path-separator": "^1.0.1",
+    "rimraf": "^2.4.2",
     "tmp": "0.0.26",
     "type-detect": "^1.0.0",
     "winston": "^1.0.1",
