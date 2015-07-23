@@ -4,7 +4,7 @@
 
 > Run a developing yeoman generator.
 
-This `run-yo` based on [yeomania](https://github.com/yosuke-furukawa/yeomania).
+This `run-yo` based on [yeomania](https://github.com/yosuke-furukawa/yeomania). `run-yo` supports scoped module, like `@sanemat/generator-nm`.
 
 ## Install
 
