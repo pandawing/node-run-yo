@@ -23,15 +23,17 @@ $ run-yo --help
   Usage
     run-yo [input]
 
-  Example
+  Examples
     run-yo
-    unicorns & rainbows
+    (run a yo generator to ./example/ )
 
-    run-yo ponies
-    ponies & rainbows
+    run-yo ../path/to/sample
+    (run a yo generator to ../path/to/sample/ )
 
   Options
-    --foo  Lorem ipsum. Default: false
+    --info     Show a log above log level info.    Default: true
+    --verbose  Show a log above log level verbose. Default: false
+    --debug    Show a log above log level debug.   Default: false
 ```
 
 
@@ -46,7 +48,7 @@ $ run-yo --help
 
 Type: `string`
 
-Run target directory.
+Run to target directory.
 
 
 #### options
@@ -57,7 +59,7 @@ Type: `boolean`
 
 Default: `true`
 
-Show a log of log level info.
+Show a log above log level info.
 
 ##### verbose
 
@@ -65,7 +67,7 @@ Type: `boolean`
 
 Default: `false`
 
-Show a log of log level verbose.
+Show a log above log level verbose.
 
 ##### debug
 
@@ -73,7 +75,7 @@ Type: `boolean`
 
 Default: `false`
 
-Show a log of log level debug.
+Show a log above log level debug.
 
 
 ## Changelog
