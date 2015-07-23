@@ -45,7 +45,7 @@ $ run-yo --help
 
 ## API
 
-### unstable(input, [options])
+### beta(input, [options])
 
 *CLI Default*
 

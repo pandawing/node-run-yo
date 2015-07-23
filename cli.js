@@ -37,4 +37,4 @@ if (cli.flags.stable) {
   runYo.stable(cli.input[0] || 'example', cli.flags);
   return;
 }
-runYo.unstable(cli.input[0] || 'example', cli.flags);
+runYo.beta(cli.input[0] || 'example', cli.flags);
