@@ -2,8 +2,7 @@
 /*eslint no-console:0*/
 'use strict';
 var meow = require('meow');
-var runStable = require('./lib/stable');
-var runUnStable = require('./lib/unstable');
+var runYo = require('./');
 
 var cli = meow({
   help: [
@@ -18,9 +17,10 @@ var cli = meow({
     '  (run the yeoman generator from ./ to ../path/to/sample/ )',
     '',
     'Options',
-    '  --info     Show a log above log level info.    Default: true',
-    '  --verbose  Show a log above log level verbose. Default: false',
-    '  --debug    Show a log above log level debug.   Default: false'
+    '  --stable  RunYo safety but slowly.            Default: false',
+    '  --info    Show a log above log level info.    Default: true',
+    '  --verbose Show a log above log level verbose. Default: false',
+    '  --debug   Show a log above log level debug.   Default: false'
   ]
 },
   {
@@ -28,13 +28,13 @@ var cli = meow({
       info: true,
       verbose: false,
       debug: false,
-      unstable: false
+      stable: false
     }
   }
 );
 
-if (cli.flags.unstable) {
-  runUnStable(cli.input[0] || 'example', cli.flags);
+if (cli.flags.stable) {
+  runYo.stable(cli.input[0] || 'example', cli.flags);
   return;
 }
-runStable(cli.input[0] || 'example', cli.flags);
+runYo.unstable(cli.input[0] || 'example', cli.flags);
