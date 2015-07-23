@@ -25,7 +25,7 @@ $ npm install --global run-yo
 $ run-yo --help
 
   Usage
-    run-yo [input]
+    run-yo [input (defalut: example)]
 
   Examples
     run-yo
@@ -35,16 +35,61 @@ $ run-yo --help
     (run the yeoman generator from ./ to ../path/to/sample/ )
 
   Options
-    --info     Show a log above log level info.    Default: true
-    --verbose  Show a log above log level verbose. Default: false
-    --debug    Show a log above log level debug.   Default: false
+    --stable  RunYo safely, but slowly.           Default: false
+    --info    Show a log above log level info.    Default: true
+    --verbose Show a log above log level verbose. Default: false
+    --debug   Show a log above log level debug.   Default: false
 ```
 
 
 
 ## API
 
-### runYo(input, [options])
+### beta(input, [options])
+
+*CLI Default*
+
+Create directory in temp, ~~`npm install` from working directory~~ __symbolic link__ to the generator, execute `yo [current generator]` and move to target directory.
+
+#### input
+
+*Required*
+
+Type: `string`
+
+Run to target directory.
+
+
+#### options
+
+##### info
+
+Type: `boolean`
+
+Default: `true`
+
+Show a log above log level info.
+
+##### verbose
+
+Type: `boolean`
+
+Default: `false`
+
+Show a log above log level verbose.
+
+##### debug
+
+Type: `boolean`
+
+Default: `false`
+
+Show a log above log level debug.
+
+
+### stable(input, [options])
+
+Create directory in temp, `npm install` from working directory, execute `yo [current generator]` and move to target directory.
 
 #### input
 

@@ -46,7 +46,8 @@
   },
   "files": [
     "cli.js",
-    "lib"
+    "lib",
+    "index.js"
   ],
   "keywords": [
     "cli",
