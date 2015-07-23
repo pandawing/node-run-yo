@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
-> Run a developing yeoman generator.
+> Run the developing yeoman generator.
 
 To speed up a development on yeoman generator!  
 `run-yo` supports scoped module, like `@sanemat/generator-nm`.  
