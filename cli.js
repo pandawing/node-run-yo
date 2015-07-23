@@ -2,7 +2,7 @@
 /*eslint no-console:0*/
 'use strict';
 var meow = require('meow');
-var yoYo = require('./lib/stable');
+var runYo = require('./lib/stable');
 
 var cli = meow({
   help: [
@@ -29,4 +29,4 @@ var cli = meow({
   }
 );
 
-yoYo(cli.input[0] || 'example', cli.flags);
+runYo(cli.input[0] || 'example', cli.flags);

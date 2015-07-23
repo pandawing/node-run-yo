@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
-> My spectacular module
+> Run a developing yo generator.
 
 
 ## Install
@@ -10,17 +10,6 @@
 ```
 $ npm install --save run-yo
 ```
-
-
-## Usage
-
-```js
-var yoYo = require('run-yo');
-
-yoYo('unicorns');
-//=> unicorns & rainbows
-```
-
 
 
 ## CLI
@@ -49,23 +38,42 @@ $ run-yo --help
 
 ## API
 
-### yoYo(input, [options])
+### runYo(input, [options])
 
 #### input
 
-*Required*  
+*Required*
+
 Type: `string`
 
-Lorem ipsum.
+Run target directory.
+
 
 #### options
 
-##### foo
+##### info
 
-Type: `boolean`  
+Type: `boolean`
+
+Default: `true`
+
+Show a log of log level info.
+
+##### verbose
+
+Type: `boolean`
+
 Default: `false`
 
-Lorem ipsum.
+Show a log of log level verbose.
+
+##### debug
+
+Type: `boolean`
+
+Default: `false`
+
+Show a log of log level debug.
 
 
 ## Changelog
