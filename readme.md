@@ -4,6 +4,7 @@
 
 > Run a developing yo generator.
 
+This `run-yo` based on [yeomania](https://github.com/yosuke-furukawa/yeomania).
 
 ## Install
 
