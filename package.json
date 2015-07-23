@@ -47,11 +47,11 @@
     "lib"
   ],
   "keywords": [
-    "yo",
-    "yeoman",
-    "develop",
     "cli",
-    "cli-app"
+    "cli-app",
+    "develop",
+    "yeoman",
+    "yo"
   ],
   "license": "MIT",
   "repository": "pandawing/node-run-yo",
