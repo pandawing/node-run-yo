@@ -7,7 +7,7 @@
 ![capture](https://cloud.githubusercontent.com/assets/75448/8856255/9c5dada0-31a4-11e5-99bd-36bfdbdd1991.gif)
 
 To speed up a development on yeoman generator!  
-You can put a generated example into the generator repository easily! e.g. [pandawing/generator-nm5/example](https://github.com/pandawing/generator-nm5/tree/master/example)  
+You can put a generated example into the generator repository easily. E.g. [pandawing/generator-nm5/example](https://github.com/pandawing/generator-nm5/tree/master/example)  
 `run-yo` supports scoped module, like `@sanemat/generator-nm`.  
 `run-yo` based on [yeomania](https://github.com/yosuke-furukawa/yeomania).  
 For OS X, Linux And Windows.
@@ -52,7 +52,7 @@ $ run-yo --help
 
 *CLI Default*
 
-Create directory in temp, ~~`npm install` from working directory~~ __symbolic link__ to the generator, execute `yo [current generator]` and move to target directory.
+Create a directory in temp, ~~`npm install` from working directory~~ __symbolic link__ to the generator, execute `yo [current generator]` and move to target directory.
 
 #### input
 
@@ -92,7 +92,7 @@ Show a log above log level debug.
 
 ### stable(input, [options])
 
-Create directory in temp, `npm install` from working directory, execute `yo [current generator]` and move to target directory.
+Create a directory in temp, `npm install` from working directory, execute `yo [current generator]` and move to target directory.
 
 #### input
 
