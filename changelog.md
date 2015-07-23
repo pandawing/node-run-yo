@@ -1,3 +1,13 @@
+<a name="0.1.4"></a>
+## 0.1.4 (2015-07-23)
+
+
+### Bug Fixes
+
+* **spawn:** hotfix for windows and cross-spawn ([bf84165](https://github.com/pandawing/node-run-yo/commit/bf84165))
+
+
+
 <a name="0.1.3"></a>
 ## 0.1.3 (2015-07-23)
 
