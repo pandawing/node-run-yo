@@ -4,8 +4,9 @@
 
 > Run a developing yeoman generator.
 
+To speed up a development on yeoman generator! 
 `run-yo` supports scoped module, like `@sanemat/generator-nm`.  
-This `run-yo` based on [yeomania](https://github.com/yosuke-furukawa/yeomania).  
+`run-yo` based on [yeomania](https://github.com/yosuke-furukawa/yeomania).  
 For OS X, Linux And Windows.
 
 ## Install
