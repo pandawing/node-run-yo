@@ -2,7 +2,8 @@
 /*eslint no-console:0*/
 'use strict';
 var meow = require('meow');
-var runYo = require('./lib/stable');
+var runStable = require('./lib/stable');
+var runUnStable = require('./lib/unstable');
 
 var cli = meow({
   help: [
@@ -26,9 +27,14 @@ var cli = meow({
     default: {
       info: true,
       verbose: false,
-      debug: false
+      debug: false,
+      unstable: false
     }
   }
 );
 
-runYo(cli.input[0] || 'example', cli.flags);
+if (cli.flags.unstable) {
+  runUnStable(cli.input[0] || 'example', cli.flags);
+  return;
+}
+runStable(cli.input[0] || 'example', cli.flags);
