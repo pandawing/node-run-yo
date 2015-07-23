@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
-> Run a developing yo generator.
+> Run a developing yeoman generator.
 
 This `run-yo` based on [yeomania](https://github.com/yosuke-furukawa/yeomania).
 
