@@ -28,10 +28,10 @@ $ run-yo --help
 
   Examples
     run-yo
-    (run a yo generator to ./example/ )
+    (run yeoman generator from ./ to ./example/ )
 
     run-yo ../path/to/sample
-    (run a yo generator to ../path/to/sample/ )
+    (run yeoman generator from ./ to ../path/to/sample/ )
 
   Options
     --info     Show a log above log level info.    Default: true
