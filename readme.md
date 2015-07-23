@@ -7,6 +7,7 @@
 ![capture](https://cloud.githubusercontent.com/assets/75448/8856255/9c5dada0-31a4-11e5-99bd-36bfdbdd1991.gif)
 
 To speed up a development on yeoman generator!  
+You can put a generated example into the generator repository easily! e.g. [pandawing/generator-nm5/example](https://github.com/pandawing/generator-nm5/tree/master/example)  
 `run-yo` supports scoped module, like `@sanemat/generator-nm`.  
 `run-yo` based on [yeomania](https://github.com/yosuke-furukawa/yeomania).  
 For OS X, Linux And Windows.
