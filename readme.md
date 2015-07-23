@@ -44,7 +44,51 @@ $ run-yo --help
 
 ## API
 
-### runYo(input, [options])
+### unstable(input, [options])
+
+*CLI Default*
+
+Create directory in temp, ~~`npm install` from working directory~~ __symbolic link__ to the generator, execute `yo [current generator]` and move to target directory.
+
+#### input
+
+*Required*
+
+Type: `string`
+
+Run to target directory.
+
+
+#### options
+
+##### info
+
+Type: `boolean`
+
+Default: `true`
+
+Show a log above log level info.
+
+##### verbose
+
+Type: `boolean`
+
+Default: `false`
+
+Show a log above log level verbose.
+
+##### debug
+
+Type: `boolean`
+
+Default: `false`
+
+Show a log above log level debug.
+
+
+### stable(input, [options])
+
+Create directory in temp, `npm install` from working directory, execute `yo [current generator]` and move to target directory.
 
 #### input
 
