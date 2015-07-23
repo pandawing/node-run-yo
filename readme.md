@@ -25,7 +25,7 @@ $ npm install --global run-yo
 $ run-yo --help
 
   Usage
-    run-yo [input]
+    run-yo [input (defalut: example)]
 
   Examples
     run-yo
@@ -35,9 +35,10 @@ $ run-yo --help
     (run the yeoman generator from ./ to ../path/to/sample/ )
 
   Options
-    --info     Show a log above log level info.    Default: true
-    --verbose  Show a log above log level verbose. Default: false
-    --debug    Show a log above log level debug.   Default: false
+    --stable  RunYo safely, but slowly.           Default: false
+    --info    Show a log above log level info.    Default: true
+    --verbose Show a log above log level verbose. Default: false
+    --debug   Show a log above log level debug.   Default: false
 ```
 
 

@@ -7,7 +7,7 @@ var runYo = require('./');
 var cli = meow({
   help: [
     'Usage',
-    '  $ run-yo [input]',
+    '  $ run-yo [input (default: example)]',
     '',
     'Examples',
     '  $ run-yo',
@@ -17,7 +17,7 @@ var cli = meow({
     '  (run the yeoman generator from ./ to ../path/to/sample/ )',
     '',
     'Options',
-    '  --stable  RunYo safety but slowly.            Default: false',
+    '  --stable  RunYo safely, but slowly.           Default: false',
     '  --info    Show a log above log level info.    Default: true',
     '  --verbose Show a log above log level verbose. Default: false',
     '  --debug   Show a log above log level debug.   Default: false'
