@@ -17,7 +17,6 @@
     "meow": "^3.3.0",
     "mkdirp": "^0.5.1",
     "mv": "^2.1.1",
-    "object-assign": "^3.0.0",
     "pretty-format": "^1.2.0",
     "remove-trailing-path-separator": "^1.0.1",
     "rimraf": "^2.4.2",
