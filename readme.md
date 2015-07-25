@@ -15,11 +15,11 @@ For OS X, Linux And Windows.
 
 ## Outline
 
-1. Create a directry in the system temporary directory.
+1. Create a directory in the system temporary directory.
 2. Create a symbolic link from src(working directory) to dest(`temp/node_modules/your_generator`).
-3. RunYo in the temporary directory!
+3. RunYo in the temporary directory.
 4. Unlink the symbolic link.
-5. Move generated app to the target.
+5. Move the app which is generated to the target.
 
 
 ## Install
