@@ -2,15 +2,25 @@
 
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
-> Run the developing yeoman generator.
+> Run a yeoman generator which you are developing, very quickly.
 
 ![capture](https://cloud.githubusercontent.com/assets/75448/8856255/9c5dada0-31a4-11e5-99bd-36bfdbdd1991.gif)
 
-To speed up a development on yeoman generator!  
-You can put a generated example into the generator repository easily. E.g. [pandawing/generator-nm5/example](https://github.com/pandawing/generator-nm5/tree/master/example)  
+To speed up a development on your yeoman generator!  
+Put a generated example into the generator repository easily. E.g. [pandawing/generator-nm5/example](https://github.com/pandawing/generator-nm5/tree/master/example)  
 `run-yo` supports scoped module, like `@sanemat/generator-nm`.  
 `run-yo` based on [yeomania](https://github.com/yosuke-furukawa/yeomania).  
 For OS X, Linux And Windows.
+
+
+## Outline
+
+1. Create a directry in the system temporary directory.
+2. Create a symbolic link from src(working directory) to dest(`temp/node_modules/your_generator`).
+3. RunYo in the temporary directory!
+4. Unlink the symbolic link.
+5. Move generated app to the target.
+
 
 ## Install
 
