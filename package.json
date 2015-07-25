@@ -1,7 +1,7 @@
 {
   "name": "run-yo",
   "description": "Run a yeoman generator which you are developing, very quickly.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "sanemat",
     "email": "o.gata.ken@gmail.com",
