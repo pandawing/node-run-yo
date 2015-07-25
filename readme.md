@@ -16,8 +16,8 @@ For OS X, Linux And Windows.
 ## Outline
 
 1. Create a directory in the system temporary directory.
-2. Create a symbolic link from src(working directory) to dest(temp/node_modules/your_generator).
-3. Execute Yo in the temporary directory.
+2. Create a __symbolic link__ from src(working directory) to dest(temp/node_modules/your_generator).
+3. Execute Yo [_your yeoman generator_] in the temporary directory.
 4. Unlink the symbolic link.
 5. Move the app which is generated to the target.
 
@@ -38,7 +38,7 @@ $ npm install --global run-yo
 $ run-yo --help
 
   Usage
-    run-yo [input (defalut: example)]
+    run-yo [input (default: example)]
 
   Examples
     run-yo
@@ -62,7 +62,7 @@ $ run-yo --help
 
 *CLI Default*
 
-Create a directory in temp, ~~`npm install` from working directory~~ __symbolic link__ to the generator, execute `yo [current generator]` and move to target directory.
+Create a directory in the system temporary directory, ~~`npm install` from working directory~~ __symbolic link__ from the generator, execute `yo [current generator]` and move to the target directory.
 
 #### input
 
@@ -70,7 +70,7 @@ Create a directory in temp, ~~`npm install` from working directory~~ __symbolic 
 
 Type: `string`
 
-Run to target directory.
+Run to the target directory.
 
 
 #### options
@@ -102,7 +102,7 @@ Show a log above log level debug.
 
 ### stable(input, [options])
 
-Create a directory in temp, `npm install` from working directory, execute `yo [current generator]` and move to target directory.
+Create a directory in the system temporary directory, `npm install` from working directory, execute `yo [current generator]` and move to the target directory.
 
 #### input
 
@@ -110,7 +110,7 @@ Create a directory in temp, `npm install` from working directory, execute `yo [c
 
 Type: `string`
 
-Run to target directory.
+Run to the target directory.
 
 
 #### options
