@@ -13,7 +13,7 @@ install:
 - ps: Install-Product node $env:nodejs_version
 - node --version
 - npm --version
-- npm install
+- windows_retry npm install
 
 # build
 build: off
