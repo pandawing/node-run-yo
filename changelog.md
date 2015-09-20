@@ -1,3 +1,9 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/pandawing/node-run-yo/compare/v0.2.2...v1.0.0) (2015-09-20)
+
+* Ship v1.0.0!
+
+
 <a name="0.2.2"></a>
 ## 0.2.2 (2015-08-22)
 
