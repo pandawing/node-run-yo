@@ -29,7 +29,6 @@
   },
   "devDependencies": {
     "conventional-changelog": "^0.4.2",
-    "david": "^6.1.6",
     "eclint": "^1.1.1",
     "env-test": "^1.0.0",
     "eslint": "^1.0.0-rc",
@@ -60,7 +59,6 @@
   "repository": "pandawing/node-run-yo",
   "scripts": {
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
-    "david": "david update",
     "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
     "eslint": "eslint .",
     "fixpack": "fixpack",
