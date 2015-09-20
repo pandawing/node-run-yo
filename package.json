@@ -37,7 +37,7 @@
     "fixpack": "^2.2.0",
     "globstar": "^1.0.0",
     "mocha": "^2.2.5",
-    "power-assert": "^0.11.0",
+    "power-assert": "^1.0.1",
     "promise-test-helper": "^0.2.1",
     "touch": "^1.0.0"
   },
