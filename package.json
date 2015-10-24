@@ -14,7 +14,7 @@
     "es6-promise": "^3.0.2",
     "is-package": "^1.0.0",
     "is-scoped-package": "^1.0.0",
-    "lnfs": "^2.0.0",
+    "lnfs": "^3.0.0",
     "meow": "^3.3.0",
     "mkdirp": "^0.5.1",
     "mv": "^2.1.1",
