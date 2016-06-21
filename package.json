@@ -28,7 +28,7 @@
     "yo": "^1.4.7"
   },
   "devDependencies": {
-    "conventional-changelog": "^1.1.0",
+    "conventional-changelog-cli": "^1.2.0",
     "eclint": "^1.1.1",
     "env-test": "^1.0.0",
     "eslint": "^2.13.0",
@@ -38,8 +38,7 @@
     "mocha": "^2.2.5",
     "npm-check-updates": "^2.2.3",
     "power-assert": "^1.0.1",
-    "promise-test-helper": "^0.2.1",
-    "touch": "^1.0.0"
+    "promise-test-helper": "^0.2.1"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -59,7 +58,7 @@
   "license": "MIT",
   "repository": "pandawing/node-run-yo",
   "scripts": {
-    "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
+    "changelog": "conventional-changelog --infile changelog.md --same-file --preset angular",
     "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
     "eslint": "eslint .",
     "fixpack": "fixpack",
