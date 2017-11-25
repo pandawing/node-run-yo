@@ -23,14 +23,14 @@ var cli = meow({
     '  --debug   Show a log above log level debug.   Default: false'
   ]
 },
-  {
-    default: {
-      info: true,
-      verbose: false,
-      debug: false,
-      stable: false
-    }
+{
+  default: {
+    info: true,
+    verbose: false,
+    debug: false,
+    stable: false
   }
+}
 );
 
 if (cli.flags.stable) {
