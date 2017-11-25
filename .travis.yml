@@ -1,9 +1,9 @@
 # https://travis-ci.org/
 language: node_js
 node_js:
-  - 4
   - 6
-  - 7
+  - 8
+  - 9
 script: "npm run verify"
 install:
   - travis_retry npm install
