@@ -1,3 +1,8 @@
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/pandawing/node-run-yo/compare/v1.0.1...v1.0.2) (2017-11-25)
+
+* Fix style
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/pandawing/node-run-yo/compare/v1.0.0...v1.0.1) (2016-06-21)
 
